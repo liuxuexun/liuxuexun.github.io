@@ -105,6 +105,69 @@ name {
   font-size: 32px;
 }
 
+.experience-list {
+  width: 100%;
+  border: 0;
+  border-spacing: 0 12px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.experience-list td {
+  padding: 0 16px;
+}
+
+.experience-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+}
+
+.experience-image {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+  object-fit: contain;
+  display: block;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.experience-details {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.experience-role,
+.experience-company,
+.experience-date {
+  line-height: 1.35;
+}
+
+.experience-date {
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .experience-card {
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .experience-image {
+    width: 76px;
+    height: 76px;
+    flex-basis: 76px;
+  }
+}
+
 .one {
   width: 160px;
   height: 160px;
